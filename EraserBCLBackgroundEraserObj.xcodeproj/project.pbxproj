@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33C2EA64296EC5FD00991E57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EA63296EC5FD00991E57 /* AppDelegate.m */; };
+		33C2EA6A296EC5FD00991E57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EA69296EC5FD00991E57 /* ViewController.m */; };
+		33C2EA6D296EC5FD00991E57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C2EA6B296EC5FD00991E57 /* Main.storyboard */; };
+		33C2EA6F296EC5FE00991E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C2EA6E296EC5FE00991E57 /* Assets.xcassets */; };
+		33C2EA72296EC5FE00991E57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C2EA70296EC5FE00991E57 /* LaunchScreen.storyboard */; };
+		33C2EA75296EC5FE00991E57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EA74296EC5FE00991E57 /* main.m */; };
+		33C2EA7F296EC87500991E57 /* UIImage+maskImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EA7E296EC87500991E57 /* UIImage+maskImage.m */; };
+		33C2EA9D296EC93D00991E57 /* CIImage+Segmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EA93296EC93D00991E57 /* CIImage+Segmentation.m */; };
+		33C2EA9E296EC93D00991E57 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EA94296EC93D00991E57 /* DeepLabV3.mlmodel */; };
+		33C2EAA1296ECDDE00991E57 /* SmoothFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EAA0296ECDDE00991E57 /* SmoothFilter.m */; };
+		33C2EAA6296FE21D00991E57 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EAA5296FE21D00991E57 /* UIImage+image.m */; };
+		33C2EAA9296FE2B000991E57 /* EraseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EAA7296FE2B000991E57 /* EraseLayer.m */; };
+		33C2EAB4297020AA00991E57 /* DrawingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C2EAB2297020AA00991E57 /* DrawingHandler.m */; };
+		381C11294C45A71C751A22E3 /* Pods_EraserBCLBackgroundEraserObj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1C05639734DCF76E52B1B7 /* Pods_EraserBCLBackgroundEraserObj.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33B9DE022973F41900A3956C /* EraserBCLBackgroundEraserObj-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EraserBCLBackgroundEraserObj-Bridging-Header.h"; sourceTree = "<group>"; };
+		33C2EA5F296EC5FD00991E57 /* EraserBCLBackgroundEraserObj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EraserBCLBackgroundEraserObj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C2EA62296EC5FD00991E57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33C2EA63296EC5FD00991E57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33C2EA68296EC5FD00991E57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		33C2EA69296EC5FD00991E57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33C2EA6C296EC5FD00991E57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33C2EA6E296EC5FE00991E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33C2EA71296EC5FE00991E57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33C2EA73296EC5FE00991E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33C2EA74296EC5FE00991E57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33C2EA7D296EC87500991E57 /* UIImage+maskImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+maskImage.h"; sourceTree = "<group>"; };
+		33C2EA7E296EC87500991E57 /* UIImage+maskImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+maskImage.m"; sourceTree = "<group>"; };
+		33C2EA91296EC93D00991E57 /* BCSegmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCSegmentation.h; sourceTree = "<group>"; };
+		33C2EA92296EC93D00991E57 /* CIImage+Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIImage+Segmentation.h"; sourceTree = "<group>"; };
+		33C2EA93296EC93D00991E57 /* CIImage+Segmentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIImage+Segmentation.m"; sourceTree = "<group>"; };
+		33C2EA94296EC93D00991E57 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		33C2EA9F296ECDDE00991E57 /* SmoothFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothFilter.h; sourceTree = "<group>"; };
+		33C2EAA0296ECDDE00991E57 /* SmoothFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothFilter.m; sourceTree = "<group>"; };
+		33C2EAA4296FE21D00991E57 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		33C2EAA5296FE21D00991E57 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		33C2EAA7296FE2B000991E57 /* EraseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraseLayer.m; sourceTree = "<group>"; };
+		33C2EAA8296FE2B000991E57 /* EraseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraseLayer.h; sourceTree = "<group>"; };
+		33C2EAAA296FE3CA00991E57 /* Config.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.pch; sourceTree = "<group>"; };
+		33C2EAB2297020AA00991E57 /* DrawingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingHandler.m; sourceTree = "<group>"; };
+		33C2EAB3297020AA00991E57 /* DrawingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingHandler.h; sourceTree = "<group>"; };
+		C211B9689B1B5FA20A83EDF9 /* Pods-EraserBCLBackgroundEraserObj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EraserBCLBackgroundEraserObj.debug.xcconfig"; path = "Target Support Files/Pods-EraserBCLBackgroundEraserObj/Pods-EraserBCLBackgroundEraserObj.debug.xcconfig"; sourceTree = "<group>"; };
+		C9979D676DF655610365740F /* Pods-EraserBCLBackgroundEraserObj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EraserBCLBackgroundEraserObj.release.xcconfig"; path = "Target Support Files/Pods-EraserBCLBackgroundEraserObj/Pods-EraserBCLBackgroundEraserObj.release.xcconfig"; sourceTree = "<group>"; };
+		EE1C05639734DCF76E52B1B7 /* Pods_EraserBCLBackgroundEraserObj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EraserBCLBackgroundEraserObj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33C2EA5C296EC5FD00991E57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381C11294C45A71C751A22E3 /* Pods_EraserBCLBackgroundEraserObj.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29F1366D068AD2261B35348D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C211B9689B1B5FA20A83EDF9 /* Pods-EraserBCLBackgroundEraserObj.debug.xcconfig */,
+				C9979D676DF655610365740F /* Pods-EraserBCLBackgroundEraserObj.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		33B9DDF92973F0E100A3956C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		33C2EA56296EC5FD00991E57 = {
+			isa = PBXGroup;
+			children = (
+				33C2EA61296EC5FD00991E57 /* EraserBCLBackgroundEraserObj */,
+				33C2EA60296EC5FD00991E57 /* Products */,
+				29F1366D068AD2261B35348D /* Pods */,
+				B9AD42D3F0341A0D028B15BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33C2EA60296EC5FD00991E57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33C2EA5F296EC5FD00991E57 /* EraserBCLBackgroundEraserObj.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33C2EA61296EC5FD00991E57 /* EraserBCLBackgroundEraserObj */ = {
+			isa = PBXGroup;
+			children = (
+				33B9DDF92973F0E100A3956C /* Utility */,
+				33C2EAAB2970139B00991E57 /* Handler */,
+				33C2EAA3296ECDFA00991E57 /* Masking */,
+				33C2EA62296EC5FD00991E57 /* AppDelegate.h */,
+				33C2EA63296EC5FD00991E57 /* AppDelegate.m */,
+				33C2EA68296EC5FD00991E57 /* ViewController.h */,
+				33C2EA69296EC5FD00991E57 /* ViewController.m */,
+				33C2EA6B296EC5FD00991E57 /* Main.storyboard */,
+				33C2EA6E296EC5FE00991E57 /* Assets.xcassets */,
+				33C2EA70296EC5FE00991E57 /* LaunchScreen.storyboard */,
+				33C2EA73296EC5FE00991E57 /* Info.plist */,
+				33C2EA74296EC5FE00991E57 /* main.m */,
+				33C2EAAA296FE3CA00991E57 /* Config.pch */,
+				33B9DE022973F41900A3956C /* EraserBCLBackgroundEraserObj-Bridging-Header.h */,
+			);
+			path = EraserBCLBackgroundEraserObj;
+			sourceTree = "<group>";
+		};
+		33C2EA80296EC93D00991E57 /* BCSegLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				33C2EA91296EC93D00991E57 /* BCSegmentation.h */,
+				33C2EA92296EC93D00991E57 /* CIImage+Segmentation.h */,
+				33C2EA93296EC93D00991E57 /* CIImage+Segmentation.m */,
+				33C2EA94296EC93D00991E57 /* DeepLabV3.mlmodel */,
+				33C2EAA2296ECDE400991E57 /* Filter */,
+			);
+			path = BCSegLibrary;
+			sourceTree = "<group>";
+		};
+		33C2EAA2296ECDE400991E57 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				33C2EA9F296ECDDE00991E57 /* SmoothFilter.h */,
+				33C2EAA0296ECDDE00991E57 /* SmoothFilter.m */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		33C2EAA3296ECDFA00991E57 /* Masking */ = {
+			isa = PBXGroup;
+			children = (
+				33C2EA80296EC93D00991E57 /* BCSegLibrary */,
+				33C2EA7D296EC87500991E57 /* UIImage+maskImage.h */,
+				33C2EA7E296EC87500991E57 /* UIImage+maskImage.m */,
+				33C2EAB3297020AA00991E57 /* DrawingHandler.h */,
+				33C2EAB2297020AA00991E57 /* DrawingHandler.m */,
+				33C2EAA4296FE21D00991E57 /* UIImage+image.h */,
+				33C2EAA5296FE21D00991E57 /* UIImage+image.m */,
+				33C2EAA8296FE2B000991E57 /* EraseLayer.h */,
+				33C2EAA7296FE2B000991E57 /* EraseLayer.m */,
+			);
+			path = Masking;
+			sourceTree = "<group>";
+		};
+		33C2EAAB2970139B00991E57 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		B9AD42D3F0341A0D028B15BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE1C05639734DCF76E52B1B7 /* Pods_EraserBCLBackgroundEraserObj.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33C2EA5E296EC5FD00991E57 /* EraserBCLBackgroundEraserObj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33C2EA78296EC5FE00991E57 /* Build configuration list for PBXNativeTarget "EraserBCLBackgroundEraserObj" */;
+			buildPhases = (
+				64B91E6258E814523FFD5AD0 /* [CP] Check Pods Manifest.lock */,
+				33C2EA5B296EC5FD00991E57 /* Sources */,
+				33C2EA5C296EC5FD00991E57 /* Frameworks */,
+				33C2EA5D296EC5FD00991E57 /* Resources */,
+				36C10C4B70B9BE25150D3718 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EraserBCLBackgroundEraserObj;
+			productName = EraserBCLBackgroundEraserObj;
+			productReference = 33C2EA5F296EC5FD00991E57 /* EraserBCLBackgroundEraserObj.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33C2EA57296EC5FD00991E57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					33C2EA5E296EC5FD00991E57 = {
+						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = 33C2EA5A296EC5FD00991E57 /* Build configuration list for PBXProject "EraserBCLBackgroundEraserObj" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33C2EA56296EC5FD00991E57;
+			productRefGroup = 33C2EA60296EC5FD00991E57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33C2EA5E296EC5FD00991E57 /* EraserBCLBackgroundEraserObj */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33C2EA5D296EC5FD00991E57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C2EA72296EC5FE00991E57 /* LaunchScreen.storyboard in Resources */,
+				33C2EA6F296EC5FE00991E57 /* Assets.xcassets in Resources */,
+				33C2EA6D296EC5FD00991E57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36C10C4B70B9BE25150D3718 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EraserBCLBackgroundEraserObj/Pods-EraserBCLBackgroundEraserObj-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EraserBCLBackgroundEraserObj/Pods-EraserBCLBackgroundEraserObj-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EraserBCLBackgroundEraserObj/Pods-EraserBCLBackgroundEraserObj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B91E6258E814523FFD5AD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EraserBCLBackgroundEraserObj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33C2EA5B296EC5FD00991E57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C2EA9D296EC93D00991E57 /* CIImage+Segmentation.m in Sources */,
+				33C2EAA6296FE21D00991E57 /* UIImage+image.m in Sources */,
+				33C2EA6A296EC5FD00991E57 /* ViewController.m in Sources */,
+				33C2EAA1296ECDDE00991E57 /* SmoothFilter.m in Sources */,
+				33C2EA64296EC5FD00991E57 /* AppDelegate.m in Sources */,
+				33C2EAA9296FE2B000991E57 /* EraseLayer.m in Sources */,
+				33C2EA9E296EC93D00991E57 /* DeepLabV3.mlmodel in Sources */,
+				33C2EAB4297020AA00991E57 /* DrawingHandler.m in Sources */,
+				33C2EA75296EC5FE00991E57 /* main.m in Sources */,
+				33C2EA7F296EC87500991E57 /* UIImage+maskImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33C2EA6B296EC5FD00991E57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33C2EA6C296EC5FD00991E57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33C2EA70296EC5FE00991E57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33C2EA71296EC5FE00991E57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33C2EA76296EC5FE00991E57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33C2EA77296EC5FE00991E57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33C2EA79296EC5FE00991E57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C211B9689B1B5FA20A83EDF9 /* Pods-EraserBCLBackgroundEraserObj.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U8DK4S4CV4;
+				GCC_PREFIX_HEADER = "/Users/bcldevice3/Documents/My Mac/Masking/EraserBCLBackgroundEraserObj/EraserBCLBackgroundEraserObj/Config.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EraserBCLBackgroundEraserObj/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braincraft.EraserBCLBackgroundEraserObj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EraserBCLBackgroundEraserObj/Utility/EraserBCLBackgroundEraserObj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33C2EA7A296EC5FE00991E57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9979D676DF655610365740F /* Pods-EraserBCLBackgroundEraserObj.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U8DK4S4CV4;
+				GCC_PREFIX_HEADER = "/Users/bcldevice3/Documents/My Mac/Masking/EraserBCLBackgroundEraserObj/EraserBCLBackgroundEraserObj/Config.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EraserBCLBackgroundEraserObj/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braincraft.EraserBCLBackgroundEraserObj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EraserBCLBackgroundEraserObj/Utility/EraserBCLBackgroundEraserObj-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33C2EA5A296EC5FD00991E57 /* Build configuration list for PBXProject "EraserBCLBackgroundEraserObj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33C2EA76296EC5FE00991E57 /* Debug */,
+				33C2EA77296EC5FE00991E57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33C2EA78296EC5FE00991E57 /* Build configuration list for PBXNativeTarget "EraserBCLBackgroundEraserObj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33C2EA79296EC5FE00991E57 /* Debug */,
+				33C2EA7A296EC5FE00991E57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33C2EA57296EC5FD00991E57 /* Project object */;
+}
