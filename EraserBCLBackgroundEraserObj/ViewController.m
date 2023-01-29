@@ -175,7 +175,7 @@
             numberOfPoints = 0;
             NSLog(@"numberOfPoints reset : %d", numberOfPoints);
                 if(erase||redraw){
-                    lastPoint= CGPointMake(staticBrushView.layer.position.x, staticBrushView.layer.position.y);
+                    lastPoint= [gesture locationInView:self.containerView];
                     lastPoint = [selectedLayer convertPoint:lastPoint fromLayer:self.containerView.layer];
                     lastPoint.y = lastPoint.y - _brushOffsetSlider.value;
                 }
@@ -193,19 +193,19 @@
                 
                 CGFloat brushWidth = lroundf(([self.brushSizeSlider value] + defaultBrushWidth)/(holdingLayer.frame.size.width/sizeOfCurrentLayer.width));
                 NSLog(@"numberOfPoints : %d", numberOfPoints);
-//                pathArray[numberOfPoints++] = newPoint;
-//                if(numberOfPoints==5){
-//                    pathArray[3] = CGPointMake((pathArray[2].x + pathArray[4].x)/2.0, (pathArray[2].y + pathArray[4].y)/2.0);
-//                    if(drawingHandler) {
-//                        [drawingHandler drawInEraseLayerAndWhiteMaskLayerWithMainLayerMask:selectedLayer.mask withPathArray:pathArray withCurrentDrawingState:erase drawingStatewithLineWidth:brushWidth];
-//                    }
-//                    pathArray[0] = pathArray[3];
-//                    pathArray[1] = pathArray[4];
-//                    numberOfPoints = 2;
-//                }
+                pathArray[numberOfPoints++] = newPoint;
+                if(numberOfPoints==5){
+                    pathArray[3] = CGPointMake((pathArray[2].x + pathArray[4].x)/2.0, (pathArray[2].y + pathArray[4].y)/2.0);
+                    if(drawingHandler) {
+                        [drawingHandler drawInEraseLayerAndWhiteMaskLayerWithMainLayerMask:selectedLayer.mask withPathArray:pathArray withCurrentDrawingState:erase drawingStatewithLineWidth:brushWidth];
+                    }
+                    pathArray[0] = pathArray[3];
+                    pathArray[1] = pathArray[4];
+                    numberOfPoints = 2;
+                }
             
             
-            [drawingHandler drawInEraseLayerAndWhiteMaskLayerWithMainLayerMask:selectedLayer.mask drawPoint:newPoint withCurrentDrawingState:erase drawingStatewithLineWidth:brushWidth];
+//            [drawingHandler drawInEraseLayerAndWhiteMaskLayerWithMainLayerMask:selectedLayer.mask drawPoint:newPoint withCurrentDrawingState:erase drawingStatewithLineWidth:brushWidth];
             
                 lastPoint=newPoint;
 //            }

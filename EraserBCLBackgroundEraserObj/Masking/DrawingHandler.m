@@ -18,21 +18,23 @@ CGPoint findMiddlePoint(CGPoint p1, CGPoint p2) {
 #pragma mark - Mask layer are drawn to show erase and redraw
 -(void) drawInEraseLayerAndWhiteMaskLayerWithMainLayerMask:(EraseLayer *) mainLayerMask
                                    withPathArray:(CGPoint *) pathArray withCurrentDrawingState:(BOOL) drawingState drawingStatewithLineWidth:(CGFloat)lineWidth{
-//    mainLayerMask.flag = drawingState;
-//    [mainLayerMask.drawingPath setLineWidth:lineWidth];
-//    [mainLayerMask.drawingPath moveToPoint:pathArray[0]];
-//    [mainLayerMask.drawingPath addCurveToPoint:pathArray[3] controlPoint1:pathArray[1] controlPoint2:pathArray[2]];
-//    [mainLayerMask setNeedsDisplay];
-    
     mainLayerMask.flag = drawingState;
     [mainLayerMask.drawingPath setLineWidth:lineWidth];
-    [mainLayerMask.drawingPath moveToPoint:pathArray[1]];
-    [mainLayerMask.drawingPath addLineToPoint:pathArray[2]];
-    [mainLayerMask.drawingPath addLineToPoint:pathArray[3]];
-    [mainLayerMask.drawingPath addLineToPoint:pathArray[4]];
-    [mainLayerMask.drawingPath addLineToPoint:pathArray[1]];
-//    [mainLayerMask.drawingPath closePath];
+    [mainLayerMask.drawingPath moveToPoint:pathArray[0]];
+    [mainLayerMask.drawingPath addCurveToPoint:pathArray[3] controlPoint1:pathArray[1] controlPoint2:pathArray[2]];
     [mainLayerMask setNeedsDisplay];
+    
+//    mainLayerMask.flag = drawingState;
+//    [mainLayerMask.drawingPath setLineWidth:lineWidth];
+//    [mainLayerMask.drawingPath moveToPoint:pathArray[1]];
+//    [mainLayerMask.drawingPath addLineToPoint:pathArray[2]];
+//    [mainLayerMask.drawingPath addLineToPoint:pathArray[3]];
+//    [mainLayerMask.drawingPath addLineToPoint:pathArray[4]];
+//    [mainLayerMask.drawingPath addLineToPoint:pathArray[1]];
+////    [mainLayerMask.drawingPath closePath];
+//    [mainLayerMask setNeedsDisplay];
+    
+    
 
 }
 
